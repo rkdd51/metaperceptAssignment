@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
-import ClassListing from "./crudOperation/ClassListing";
-import ClassEdit from "./crudOperation/ClassEdit";
-import ClassDetails from "./crudOperation/ClassDetails";
-import ClassCreate from "./crudOperation/ClassCreate";
+import ClassListing from "./ClassListing";
+import ClassEdit from "./ClassEdit";
+import ClassDetails from "./ClassDetails";
+import ClassCreate from "./ClassCreate";
 
 function App() {
   return (

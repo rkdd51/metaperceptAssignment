@@ -16,7 +16,7 @@ const ClassEdit = () => {
   const { empid } = useParams();
   //Fetch Data
   useEffect(() => {
-    fetch("http://localhost:8000/employee/" + empid)
+    fetch("http://localhost:8000/class/" + empid)
       .then((res) => res.json())
       .then((response) => {
         setIdChange(response.id);
@@ -31,7 +31,7 @@ const ClassEdit = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const empdata = { id, name, email, phoneNumber };
-    fetch("http://localhost:8000/employee/" + empid, {
+    fetch("http://localhost:8000/class/" + empid, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const ClassEdit = () => {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3">Edit Employee Form</Typography>
+      <Typography variant="h3">Edit Class Form</Typography>
       <form onSubmit={handleSubmit}>
         <div>
           <TextField
